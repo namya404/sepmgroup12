@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Login Page</title>
+	<link rel="stylesheet" href="css/loginstyle.css">
+	<script src="js/loginCode.js"></script>
+</head>
+<body>
+	<header>
+		<h1>My Login Page</h1>
+	</header>
+	<main>
+		<section id="message" class="valid">
+			<p>Either Username or Password are incorrect</p>
+		</section>
+		<section id="blank" class="valid">
+			<p>Invalid Credentials</p>
+		</section>
+		<form class="Login">
+			<label for="name">Username:</label>
+			<input type="name" id="name" name="name" required><br>
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required onchange="return check()"><br>
+			<button class="button" onclick="return check()">Login</button>
+		</form>
+	</main>
+</body>
+</html>
